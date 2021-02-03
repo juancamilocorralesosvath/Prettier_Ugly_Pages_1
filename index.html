@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Hello, world!</title>
+</head>
+
+<body>
+  <!-- navigation bar section -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img class="chester-logo-img" src="./images/chester-logo.jpg" alt="chester logo">
+      </a>
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active my-nav-item" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link my-nav-item" href="#">Hotels</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link my-nav-item" href="#">Guesthouses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link my-nav-item" href="#">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link my-nav-item" href="#">Visiting</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link my-nav-item" href="#">Parking</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link my-nav-item" href="#">Shopping</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link my-nav-item" href="#">Business</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link my-nav-item" href="#">Pubs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link my-nav-item" href="#">Restaurants</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link my-nav-item" href="#">Tickets</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link my-nav-item" href="#">Live</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link my-nav-item" href="#">Community</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link my-nav-item" href="#">Contact Us</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Chester Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- carousel section -->
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+      <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+      <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+      <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active my-item">
+        <img src="./images/chester-bg.jpg" class="d-block w-100 carousel-img" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="carousel-titles">First slide label</h5>
+          <p class="carousel-ps">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </div>
+      </div>
+      <div class="carousel-item my-item">
+        <img src="./images/chester-bg-2.jpg" class="d-block w-100 carousel-img" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="carousel-titles">Second slide label</h5>
+          <p class="carousel-ps">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+      <div class="carousel-item my-item">
+        <img src="./images/st-werburgh.jpeg" class="d-block w-100 carousel-img" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="carousel-titles">Third slide label</h5>
+          <p class="carousel-ps" Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p> </div> </div> <div
+            class="carousel-item my-item">
+            <img src="./images/luxury.jpg" class="d-block w-100 carousel-img" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="carousel-titles">Third slide label</h5>
+              <p class="carousel-ps">Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </a>
+    </div>
+    <!-- continuation of the body -->
+    <article class="brief-intro-text">
+      <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 30px;">Welcome
+        to the unofficial guide, to the history and tourist attractions of the International Heritage City of
+        Chester.This website contains sightseeing and historical information. You can also book hotels online.The
+        official council run website is located at www.visitcheshire.com</p>
+    </article>
+    <!-- pictures like following the style of the section of "picture of the day" from the original website -->
+    <!-- TODO: como cambiamos los contenedores hechos a manita que teniamos, por los cards de bootstrap, tenemos que volver a arreglar el tema del tamanio de la imagen -->
+   
+    <article class="container pictures">
+      <div class="row">
+        <!-- 1 -->
+        <div class="card my-card" style="width: 18rem;" data-aos="fade-right">
+          <img class="picture-of-the-day-img" src="./images/picture-of-the-day-1.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+          </div>
+        </div>
+        <!-- 2 -->
+        <div class="card my-card" style="width: 18rem;" data-aos="fade-left">
+          <img class="picture-of-the-day-img" src="./images/picture-of-the-day-2.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <!-- 3 -->
+        <div class="card my-card" style="width: 18rem;" data-aos="fade-right">
+          <img class=" picture-of-the-day-img" src="./images/cheschire-UK-4.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+          </div>
+        </div>
+        <!-- 4 -->
+        <div class="card my-card" style="width: 18rem;" data-aos="fade-left">
+          <img class="picture-of-the-day-img" src="./images/cheschire-UK-3.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <!-- 5 -->
+        <div class="card my-card" style="width: 18rem;" data-aos="fade-right">
+          <img class="picture-of-the-day-img" src="./images/chester-cathedral-2.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+          </div>
+        </div>
+        <!-- 6 -->
+        <div class="card my-card" style="width: 18rem;" data-aos="fade-left">
+          <img class="picture-of-the-day-img" src="./images/chester-bg-2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- little section to indicate a redirection -->
+    <section class="general-sections" data-aos="fade-up" data-aos-duration="4000">
+      <h2>you can view the Council visitor guides here</h2>
+      <a href="https://www.visitcheshire.com/visitor-information/maps-and-guides">
+        <button class="btn btn-primary">
+        <h3>CHESTER CHESCHIRE & BEYOND</h3>
+      </button>
+    </a>
+    </section>
+    <!-- more info from the website, this is the history text -->
+    <section class="general-sections" data-aos="fade-up" data-aos-duration="4000">
+      <p>Chester is an historic city on the border of Wales and England. Its origins can be traced back to the founding of the Roman fortress of Deva in A.D. 70. After the Romans Chester developed into a busy port with trade from Dublin. But the river Dee silted up and trade declined and the city's development was frozen. Today Chester is a major tourist attraction and shopping location.</p>
+      <section class="container picture-of-the-day-container" data-aos="fade-right">
+        <a href="">
+          <img src="./images/chester-cathedral.png" alt="chester cathedral">
+        </a>
+        <article class="picture-of-the-day-text">
+          <p>C</p>
+        </article>
+      </section>
+    </section>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
