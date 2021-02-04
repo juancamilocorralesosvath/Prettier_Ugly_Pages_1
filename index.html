@@ -184,7 +184,7 @@
       </div>
     </article>
     <!-- little section to indicate a redirection -->
-    <section class="general-sections" data-aos="fade-up" data-aos-duration="4000">
+    <section class="general-sections" data-aos="fade-up" data-aos-duration="8000">
       <h2>you can view the Council visitor guides here</h2>
       <a href="https://www.visitcheshire.com/visitor-information/maps-and-guides">
         <button class="btn btn-primary">
@@ -193,24 +193,74 @@
     </a>
     </section>
     <!-- more info from the website, this is the history text -->
-    <section class="general-sections" data-aos="fade-up" data-aos-duration="4000">
-      <p>Chester is an historic city on the border of Wales and England. Its origins can be traced back to the founding of the Roman fortress of Deva in A.D. 70. After the Romans Chester developed into a busy port with trade from Dublin. But the river Dee silted up and trade declined and the city's development was frozen. Today Chester is a major tourist attraction and shopping location.</p>
-      <section class="container picture-of-the-day-container" data-aos="fade-right">
-        <a href="">
-          <img src="./images/chester-cathedral.png" alt="chester cathedral">
-        </a>
-        <article class="picture-of-the-day-text">
-          <p>C</p>
-        </article>
-      </section>
+    <section class="general-sections" data-aos="fade-up" data-aos-duration="8000">
+      <p class="lead">Chester is an historic city on the border of Wales and England. Its origins can be traced back to the founding of the Roman fortress of Deva in A.D. 70. After the Romans Chester developed into a busy port with trade from Dublin. But the river Dee silted up and trade declined and the city's development was frozen. Today Chester is a major tourist attraction and shopping location.</p>
+      <div class="card general-section-card" data-aos="fade-left">
+        <img class="img-thumbnail" src="./images/chester-cathedral.png" class="card-img-top" alt="...">
+      </div>
     </section>
-    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- card with the option to book a room in an hotel -->
+    <section class="container bookingCardContainer">
+      <div class="card bookingCard" style="width: 18rem;" id="bookingCard">
+        <div class="card-body my-card-body">
+          <h5 class="card-title">Search</h5>
+          <label for="destination">Destination/property name:</label>
+          <aside class="search-input-card">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+            </svg>
+            <input style="border: none;" type="text" name="destination" />
+          </aside>
+          <label for="check-in-date">Check-in date</label>
+          <input type="date" name="check-in-date" id="">
+          <label for="check-out-date">Check-out date</label>
+          <input type="date" name="check-out-date" id="">
+          <label for="">1-night stay</label>
+          <!-- input with multiple option (Bootstrap) -->
+          <div class="bookingCardOptions" id="bookingCardOptions">
+            <div class="input-group mb-3" id="">
+              <select name="adults" class="form-select" id="inputGroupSelect01">
+                <option value="0">select adults</option>
+              </select>
+            </div>
+            <article class="children-rooms-options-card">
+              <div class="input-group mb-3">
+                <select name="children" class="form-select" id="inputGroupSelect01">
+                  <option value="0">select children</option>
+                </select>
+              </div>
+              <div class="input-group mb-3">
+                <select name="rooms" class="form-select" id="inputGroupSelect01">
+                  <option value="0">select rooms</option>
+                </select>
+              </div>
+            </article>
+          </div>
+          <div class="input-group mb-3">
+            <div class="input-group-text travelling-for-work-option">
+              <input class="form-check-input" type="checkbox" value="" aria-label="Checkbox for following text input">
+              <label for=""> I'm travelling for work</label>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-question-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"/>
+              </svg>
+            </div>
+          </div>
+          <a href="#" class="btn btn-primary search-a" style="height: 100%;">Go somewhere</a>
+        </div>
+      </div>
+    </section>
+
+    
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
     </script>
+    <!-- this is the AOS library, for the scrolling animation -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- my index.js -->
     <script src="./index.js"></script>
 </body>
 
