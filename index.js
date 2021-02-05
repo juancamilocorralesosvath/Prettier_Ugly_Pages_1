@@ -26,10 +26,9 @@ bookingCard.onclick = (e) => {
     "document.getElementsByClassName", luego puedo hacer un forEach, y para cada uno, hago el metodo que ya habia hecho, y listo!
     
 */
-const [a, b, c] = document.getElementsByClassName('adults-children-rooms-option');
-console.log(a, b, c);
-[a, b, c].forEach(element => {
-    console.log(element)
+const showBookingCardOptions = () =>{
+    const [a, b, c] = document.getElementsByClassName('adults-children-rooms-option');
+    [a, b, c].forEach(element => {
     for (let i = 0; i < MAX_LIMIT; i++){
         let option = document.createElement('option');
         option.value = i+1;
@@ -37,6 +36,9 @@ console.log(a, b, c);
         element.appendChild(option);
     }
 });
+}
+showBookingCardOptions();
+
 /* epa! problema resuelto, gloria a Dios!
     ojo, por si algun dia alguien lee esto, no me funcionaba porque lo estaba llamando asi:
     -------------------------------------------------------------------------------
