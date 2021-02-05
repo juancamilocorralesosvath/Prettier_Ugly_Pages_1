@@ -47,12 +47,14 @@
 .picture-of-the-day-text{
     text-align: center;
 }
+.leaving-space{
+    margin-top: 200px;
+    margin-bottom: 300px;
+}
 .general-sections{
     height: 20vh;
     width: 100%;
     text-align: center;
-    margin-top: 200px;
-    margin-bottom: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -69,6 +71,7 @@
 }
 .bookingCardContainer{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }

@@ -183,6 +183,9 @@
         </div>
       </div>
     </article>
+    <aside class="leaving-space">
+
+    </aside>
     <!-- little section to indicate a redirection -->
     <section class="general-sections" data-aos="fade-up" data-aos-duration="8000">
       <h2>you can view the Council visitor guides here</h2>
@@ -192,6 +195,9 @@
       </button>
     </a>
     </section>
+    <aside class="leaving-space">
+
+    </aside>
     <!-- more info from the website, this is the history text -->
     <section class="general-sections" data-aos="fade-up" data-aos-duration="8000">
       <p class="lead">Chester is an historic city on the border of Wales and England. Its origins can be traced back to the founding of the Roman fortress of Deva in A.D. 70. After the Romans Chester developed into a busy port with trade from Dublin. But the river Dee silted up and trade declined and the city's development was frozen. Today Chester is a major tourist attraction and shopping location.</p>
@@ -199,9 +205,32 @@
         <img class="img-thumbnail" src="./images/chester-cathedral.png" class="card-img-top" alt="...">
       </div>
     </section>
+    <aside class="leaving-space">
+
+    </aside>
+    <!-- section of best hotels -->
+    <!-- I'm not gonna add it animation cause maybe ive used too much animations -->
+    <section>
+      <h1>Best Hotels</h1>
+      <div class="card experimenting" style="width: 18rem;" data-aos="fade-left">
+        <img class="picture-of-the-day-img" src="./images/picture-of-the-day-2.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+        </div>
+      </div>
+    </section>
+    <!-- section of other options -->
+    <section>
+
+    </section>
+<!-- and ce fini boy! -->
+
+
 
     <!-- card with the option to book a room in an hotel -->
-    <section class="container bookingCardContainer">
+    <!-- thinking about it, this should appear at the end right? -->
+    <section class="container bookingCardContainer" data-aos="fade-up" data-aos-duration="8000">
+      <h1>Book a hotel room now!</h1>
       <div class="card bookingCard" style="width: 18rem;" id="bookingCard">
         <div class="card-body my-card-body">
           <h5 class="card-title">Search</h5>
@@ -220,18 +249,18 @@
           <!-- input with multiple option (Bootstrap) -->
           <div class="bookingCardOptions" id="bookingCardOptions">
             <div class="input-group mb-3" id="">
-              <select name="adults" class="form-select" id="inputGroupSelect01">
+              <select name="adults" class="form-select adults-children-rooms-option" id="inputGroupSelect01">
                 <option value="0">select adults</option>
               </select>
             </div>
             <article class="children-rooms-options-card">
               <div class="input-group mb-3">
-                <select name="children" class="form-select" id="inputGroupSelect01">
+                <select name="children" class="form-select adults-children-rooms-option" id="inputGroupSelect01">
                   <option value="0">select children</option>
                 </select>
               </div>
               <div class="input-group mb-3">
-                <select name="rooms" class="form-select" id="inputGroupSelect01">
+                <select name="rooms" class="form-select adults-children-rooms-option" id="inputGroupSelect01">
                   <option value="0">select rooms</option>
                 </select>
               </div>
