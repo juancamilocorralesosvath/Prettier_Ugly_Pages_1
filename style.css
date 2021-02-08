@@ -101,6 +101,9 @@
     align-items: center;
     font-size: 2em;
 }
+.best-hotels{
+    height: 200px;
+}
 /* 
 @keyframes slide_in {
     0%{
