@@ -102,8 +102,19 @@
     font-size: 2em;
 }
 .best-hotels{
-    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    height: 15em;
+    margin-bottom: 300px;
 }
+.hotel-img{
+    cursor: pointer;
+    width: 20%;
+}
+.hotel-img:hover{
+    background-color: rgb(167, 161, 161);
+}
+
 /* 
 @keyframes slide_in {
     0%{
